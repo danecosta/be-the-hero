@@ -22,6 +22,6 @@ routes.get('/incidents', IncidentController.index);
 // Cadastro de Incidents
 routes.post('/incidents', IncidentController.create);
 // Exclusão de Incidents
-routes.delete('/incidents', IncidentController.delete);
+routes.delete('/incidents/:id', IncidentController.delete);
 
 module.exports = routes;
