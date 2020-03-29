@@ -19,7 +19,7 @@ module.exports = {
                 'ongs.uf']);
 
         response.header('X-Total-Count', count['count(*)']);
-
+        console.log(ongs)
         return response.json(ongs);
     },
 
